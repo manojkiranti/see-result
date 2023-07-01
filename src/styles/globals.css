@@ -214,9 +214,39 @@ body {
   margin-left: -40px;
   z-index: 1;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .col-md-6{
     max-width: 50%;
     flex: 0  0 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-text h1{
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .banner-section{
+    text-align: center;
+  }
+  .app-download-list{
+    margin-bottom: 2rem;
+  }
+  .col-md-6{
+    max-width: 100%;
+    flex: 0  0 100%;
+  }
+  .row{
+    display: block;
+  }
+  .banner-image-wrapper::before{
+    width: 400px;
+    height: 400px;
+  }
+  .banner-image{
+    width: 300px;
+  }
+  .aside-img-top{
+    margin-right: -50px;
   }
 }
