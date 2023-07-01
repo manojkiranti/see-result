@@ -45,7 +45,33 @@ export default function Home() {
                 <h1 className="font-bold fs">
                   Best way to <span className="text-primary">Get Your SEE Result.</span>
                 </h1>
-                <p>NIC Asia Bank offers a convenient and efficient method to access the SEE results online. Simply download the NIC ASIA Mobank app and effortlessly view your SEE result.</p>
+                <p>First time in Nepalese Banking Industry NIC ASIA Bank offers their valued customers to get SEE result of their childrens through NIC ASIA MoBank.</p>
+                <ul className="steps">
+                  <li>
+                    <div className="step-icon">
+                      <img src="/img/verify.png" alt="" />
+                    </div>
+                    <div className="step-text">
+                        <h6>Pre Register:</h6>
+                        <p>
+                          Register your basic details to receive the results via SMS once they are published.
+                        </p>
+                    </div>
+                      
+                  </li>
+                  <li>
+          
+                    <div className="step-icon">
+                      <img src="/img/notepad.png" alt="" />
+                    </div>
+                    <div className="step-text">
+                        <h6>Check Result:</h6>
+                        <p>
+                          You can input your basic details online and obtain the result.
+                        </p>
+                    </div>
+                  </li>
+                </ul>
                 <ul className="app-download-list">
                   <li>
                     <a href="https://apps.apple.com/qa/app/nic-asia-mobank/id670919765" target="_blank">

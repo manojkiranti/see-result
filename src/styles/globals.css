@@ -170,6 +170,7 @@ body {
   height: 100%;
   overflow: hidden;
   border-radius: 45px;
+  background-color: #f2f4f5;
 }
 .slider-image{
   width: 100%;
@@ -214,6 +215,49 @@ body {
   margin-left: -40px;
   z-index: 1;
 }
+
+.steps{
+  margin-top: 2rem;
+}
+.steps li{
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.steps li:last-child{
+  margin-bottom: 0;
+}
+.step-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    flex: 0 0 60px;
+}
+.steps li:nth-child(1n) .step-icon{
+  /* background-color: #289df3; */
+}
+.steps li:nth-child(2n) .step-icon{
+  background-color: #dff1b2;
+}
+.steps li:nth-child(2n) .step-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps li:nth-child(2n) .step-icon img{
+  width: 52%;
+}
+.step-text{
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+.step-text h6{
+  font-weight: 700;
+}
+.step-text p{
+  font-size: 85%;
+}
 @media screen and (min-width: 768px) {
   .col-md-6{
     max-width: 50%;
@@ -248,5 +292,14 @@ body {
   }
   .aside-img-top{
     margin-right: -50px;
+  }
+  .steps li{
+    display: block;
+  }
+  .step-icon{
+    margin: 0 auto 10px;
+  }
+  .step-text{
+    padding: 0;
   }
 }
