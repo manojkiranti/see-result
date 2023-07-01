@@ -1,0 +1,102 @@
+import Head from "next/head";
+import { Poppins } from 'next/font/google'
+import Slider from 'react-slick'
+const poppins = Poppins({
+  weight: ['400', '700'],
+  subsets: ['latin']
+})
+export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    swipeToSlide: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
+  return (
+    <main
+      className={`${poppins.className}`}
+    >
+      <Head>
+        <title>NIC ASIA BANK - SEE Result</title>
+        <meta name="description" content="NIC Asia Bank offers a convenient and efficient method to access the SEE results online" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="banner-section">
+        <div className="anim_line">
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+          <span><img src="/img/line.png" alt="line" /></span>
+        </div>
+        <div className="container">
+          <div className='items-center row'>
+            <div className="col-md-6">
+              <div className="banner-text">
+                <h1 className="font-bold fs">
+                  Best way to <span className="text-primary">Get Your SEE Result.</span>
+                </h1>
+                <p>NIC Asia Bank offers a convenient and efficient method to access the SEE results online. Simply download the NIC ASIA Mobank app and effortlessly view your SEE result.</p>
+                <ul className="app-download-list">
+                  <li>
+                    <a href="https://apps.apple.com/qa/app/nic-asia-mobank/id670919765" target="_blank">
+                      <img src="/img/appstore_red.png" alt="" className="app-initial" />
+                      <img src="/img/appstore_white.png" alt="" className="app-hover" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.f1soft.nicasiamobilebanking&hl=en&gl=US" target="_blank">
+                      <img src="/img/googleplay_red.png" alt="" className="app-initial" />
+                      <img src="/img/googleplay_white.png" alt="" className="app-hover" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className='banner-image-content'>
+                <div className="banner-image-wrapper">
+                  <div className="banner-image">
+                    <img src="/img/mobile.svg" alt="" />
+                  </div>
+                  <div className="banner-slider-images">
+                    <Slider {...settings}>
+                      <div className="slider-image">
+                        <img src="/img/result-image.png" alt="" />
+                      </div>
+                      <div className="slider-image">
+                        <img src="/img/result-img2.png" alt="" />
+                      </div>
+                    </Slider>
+                  </div>
+                  <div className="aside-img aside-img-top">
+                    <div>
+                      <img src="/img/download.png" alt="" />
+                      <p>1M<small>+</small></p>
+                    </div>
+
+                  </div>
+                  <div className="aside-img aside-img-btm">
+                    <div>
+                      <img src="/img/flash-sale.png" alt="" />
+                      <p>Fast</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
+}

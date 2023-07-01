@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color:#fff;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.col-md-6{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.anim_line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.anim_line span {
+  position: absolute;
+  z-index: 99999;
+  top: -275px;
+  animation: star_down_one 6s infinite linear;
+  opacity: 0;
+}
+.anim_line span:nth-child(2) {
+  left: 0%;
+  animation-delay: 5s;
+}
+.anim_line span:nth-child(3) {
+  left: 17%;
+  animation-delay: 1s;
+}
+.anim_line span:nth-child(4) {
+  left: 34%;
+  animation-delay: 4s;
+}
+.anim_line span:nth-child(5) {
+  left: 51%;
+  animation-delay: 7s;
+}
+.anim_line span:nth-child(6) {
+  left: 68%;
+}
+.anim_line span:nth-child(7) {
+  left: 85%;
+  animation-delay: 3s;
+}
+.anim_line span:nth-child(8) {
+  left: 99%;
+  animation-delay: 2s;
+}
+.anim_line span:nth-child(9) {
+  left: 117%;
+  animation-delay: 5s;
+}
+@keyframes star_down_one {
+  0% {    opacity: 0; top: -250px;}
+  10% {    opacity: 1;}
+  90% {    opacity: 1;}
+  100% {    opacity: 0; top: 100%;}
+}
+
+.banner-section{
+  padding: 3rem 0;
+  background-color: rgba(233,37,37,0.01);
+  color: #3E3F66;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.banner-text {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.banner-text h1{
+  font-size: 55px;
+  line-height: 70px;
+}
+.app-download-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 2rem 0 0 ;
+}
+.app-download-list li:last-child{
+  margin-left: 25px;
+}
+.app-download-list li a{
+   display: block;
+    padding: 12px 30px;
+    background-color: #fff;
+    border: 2px solid #df2525;
+    position: relative;
+    border-radius: 12px;
+    transition: .4s all;
+}
+.app-download-list li a img{
+  transition: .4s all;
+}
+.app-download-list li a .app-hover{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.app-download-list li a:hover{
+  background-color: #df2525;
+}
+.app-download-list li a:hover .app-hover{
+  opacity: 1;
+}
+.banner-image-content{
+  text-align: center;
+}
+.banner-image-wrapper{
+  position: relative;
+  display: inline-block;
+}
+.banner-image-wrapper::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 475px;
+  height: 475px;
+  border-radius: 100%;
+  background-color: #df2525;
+  z-index: -5;
+}
+
+.banner-image{
+  width: 320px;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.banner-slider-images{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 45px;
+}
+.slider-image{
+  width: 100%;
+  padding: 10px;
+}
+.slider-image img{
+  width: 100%;
+}
+
+.aside-img{
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 50%;
+  color: #fff;
+}
+.aside-img div p{
+  line-height: 1;
+  margin: 0;
+}
+.aside-img-top{
+  background: linear-gradient(135deg, rgb(200 115 120) 0%, rgb(223 0 0) 100%);
+  box-shadow: 0px 6px 10px 0px rgba(233, 0, 0, 0.3);
+  position: absolute;
+  top: 11%;
+  z-index: -1;
+  right: 0;
+  margin-right: -100px;
+}
+.aside-img-btm{
+  background: linear-gradient(135deg, rgb(247, 184, 175) 0%, rgb(248, 69, 45) 100%);
+  box-shadow: 0px 6px 10px 0px rgba(247, 184, 175, 0.3);
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  margin-left: -40px;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) {
+  .col-md-6{
+    max-width: 50%;
+    flex: 0  0 50%;
+  }
+}
