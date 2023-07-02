@@ -165,9 +165,9 @@ body {
 }
 .banner-slider-images{
   position: absolute;
-  left: 0;
+  left: 0.5%;
   top: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
   overflow: hidden;
   border-radius: 45px;
