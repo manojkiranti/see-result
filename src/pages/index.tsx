@@ -45,6 +45,7 @@ export default function Home() {
                  <p>Visit NIC Asia Bank's official website to access your SEE Result 2079 with marksheet.</p>
               </div>
               <div className="banner-text">
+                <h6 className="text-sub-title"><span className="text-primary"># </span>Coming Soon</h6>
                 <h1 className="font-bold fs">
                   First time in Nepal. Get SEE result in <span className="text-primary"> Mobile Banking.</span>
                 </h1>
