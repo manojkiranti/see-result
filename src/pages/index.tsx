@@ -46,9 +46,9 @@ export default function Home() {
               </div>
               <div className="banner-text">
                 <h1 className="font-bold fs">
-                  Best way to <span className="text-primary">Get Your SEE Result.</span>
+                  First time in Nepal. Get SEE result in <span className="text-primary"> Mobile Banking.</span>
                 </h1>
-                <p>First time in Nepalese Banking Industry NIC ASIA Bank offers their valued customers to get SEE result of their childrens through NIC ASIA MoBank.</p>
+                <p>NIC ASIA Bank offers facility to check SEE result of your student through MoBank.</p>
                 <ul className="steps">
                   <li>
                     <div className="step-icon">
