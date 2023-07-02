@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container">
           <div className='items-center row'>
             <div className="col-md-6">
-              <div style={{visibility: 'hidden' ,opacity:0}}>
+              <div style={{visibility: 'hidden' ,opacity:0, display:"none"}}>
                   <h2>Check SEE Result 2079 with Marksheet via NIC Asia Bank</h2>
                  <p>Visit NIC Asia Bank's official website to access your SEE Result 2079 with marksheet.</p>
               </div>
