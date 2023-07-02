@@ -40,9 +40,9 @@ export default function Home() {
         <div className="container">
           <div className='items-center row'>
             <div className="col-md-6">
-              <div style={{visibility: 'hidden' ,opacity:0, display:"none"}}>
-                  <h2>Check SEE Result 2079 with Marksheet via NIC Asia Bank</h2>
-                 <p>Visit NIC Asia Bank's official website to access your SEE Result 2079 with marksheet.</p>
+              <div style={{ visibility: 'hidden', opacity: 0, display: "none" }}>
+                <h2>Check SEE Result 2079 with Marksheet via NIC Asia Bank</h2>
+                <p>Visit NIC Asia Bank official website to access your SEE Result 2079 with marksheet.</p>
               </div>
               <div className="banner-text">
                 <h6 className="text-sub-title"><span className="text-primary"># </span>Coming Soon</h6>
@@ -56,23 +56,23 @@ export default function Home() {
                       <img src="/img/verify.png" alt="" />
                     </div>
                     <div className="step-text">
-                        <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank"> Pre Register:</a></h6>
-                        <p>
-                          Register your basic details to receive the results via SMS once they are published.
-                        </p>
+                      <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank"> Pre Register:</a></h6>
+                      <p>
+                        Register your basic details to receive the results via SMS once they are published.
+                      </p>
                     </div>
-                      
+
                   </li>
                   <li>
-          
+
                     <div className="step-icon">
                       <img src="/img/notepad.png" alt="" />
                     </div>
                     <div className="step-text">
-                        <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank">Check Result:</a></h6>
-                        <p>
-                          You can input your basic details online and obtain the result.
-                        </p>
+                      <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank">Check Result:</a></h6>
+                      <p>
+                        You can input your basic details online and obtain the result.
+                      </p>
                     </div>
                   </li>
                 </ul>
