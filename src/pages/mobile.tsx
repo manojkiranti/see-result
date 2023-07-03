@@ -5,7 +5,7 @@ const poppins = Poppins({
   weight: ['400', '700'],
   subsets: ['latin']
 })
-export default function Home() {
+export default function Mobile() {
   const settings = {
     dots: true,
     infinite: true,
@@ -78,28 +78,14 @@ export default function Home() {
                     </a>
                   </li>
                 </ul> */}
-                <div className="mt-8 mb-4 max-[767px]:mb-9 text-content">
+                 <div className="mt-8 mb-4 max-[767px]:mb-9 text-content">
                   {/* <a href="https://eservice.nicasiabank.com/see-result/pre-registration" className="custom-btn" target="_blank">
                     View Result
                   </a> */}
                   <h2>Coming Soon</h2>
                   <h2>Coming Soon</h2>
                 </div>
-          
-                <ul className="app-download-list max-[767px]:hidden">
-                  <li>
-                    <a href="https://apps.apple.com/qa/app/nic-asia-mobank/id670919765" target="_blank">
-                      <img src="/img/appstore_red.png" alt="" className="app-initial" />
-                      <img src="/img/appstore_white.png" alt="" className="app-hover" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.f1soft.nicasiamobilebanking&hl=en&gl=US" target="_blank">
-                      <img src="/img/googleplay_red.png" alt="" className="app-initial" />
-                      <img src="/img/googleplay_white.png" alt="" className="app-hover" />
-                    </a>
-                  </li>
-                </ul>
+                
               </div>
             </div>
             <div className="col-md-6">
@@ -132,20 +118,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <ul className="app-download-list min-[767px]:hidden">
-                  <li>
-                    <a href="https://apps.apple.com/qa/app/nic-asia-mobank/id670919765" target="_blank">
-                      <img src="/img/appstore_red.png" alt="" className="app-initial" />
-                      <img src="/img/appstore_white.png" alt="" className="app-hover" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.f1soft.nicasiamobilebanking&hl=en&gl=US" target="_blank">
-                      <img src="/img/googleplay_red.png" alt="" className="app-initial" />
-                      <img src="/img/googleplay_white.png" alt="" className="app-hover" />
-                    </a>
-                  </li>
-                </ul>
+                
               </div>
             </div>
           </div>
