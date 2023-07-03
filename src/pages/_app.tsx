@@ -1,8 +1,12 @@
 import '@/styles/globals.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Poppins } from 'next/font/google'
 import type { AppProps } from 'next/app'
-
+const poppins = Poppins({
+  weight: ['400', '700'],
+  subsets: ['latin']
+})
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <main className={`${poppins.className}`}><Component {...pageProps} /></main>
 }

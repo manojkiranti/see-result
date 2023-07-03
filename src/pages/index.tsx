@@ -1,10 +1,7 @@
 import Head from "next/head";
-import { Poppins } from 'next/font/google'
+
 import Slider from 'react-slick'
-const poppins = Poppins({
-  weight: ['400', '700'],
-  subsets: ['latin']
-})
+
 export default function Home() {
   const settings = {
     dots: true,
@@ -19,7 +16,7 @@ export default function Home() {
 
   return (
     <main
-      className={`${poppins.className}`}
+      
     >
       <Head>
         <title>SEE Result 2079 | Marksheet | Symbol Number | NIC Asia Bank</title>
