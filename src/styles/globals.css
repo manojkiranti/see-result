@@ -223,8 +223,12 @@ body {
 .steps li{
   list-style: none;
   margin-bottom: 10px;
-  display: flex;
+ 
   /* flex-wrap: wrap; */
+
+}
+.steps li > a{
+  display: flex;
 }
 .steps li:last-child{
   margin-bottom: 0;
@@ -302,5 +306,8 @@ body {
   }
   .step-text{
     padding: 0;
+  }
+  .steps li > a{
+    display: block;
   }
 }

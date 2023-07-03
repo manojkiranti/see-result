@@ -52,28 +52,30 @@ export default function Home() {
                 <p>NIC ASIA Bank offers facility to check SEE result of your student through MoBank.</p>
                 <ul className="steps">
                   <li>
-                    <div className="step-icon">
-                      <img src="/img/verify.png" alt="" />
-                    </div>
-                    <div className="step-text">
-                      <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank"> Pre Register:</a></h6>
-                      <p>
-                        Register your basic details to receive the results via SMS once they are published.
-                      </p>
-                    </div>
-
+                      <a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank">
+                        <div className="step-icon">
+                          <img src="/img/verify.png" alt="" />
+                        </div>
+                        <div  className="step-text">
+                          <h6> Pre Register:</h6>
+                          <p>
+                            Register your basic details to receive the results via SMS once they are published.
+                          </p>
+                        </div>
+                      </a>
                   </li>
                   <li>
-
-                    <div className="step-icon">
-                      <img src="/img/notepad.png" alt="" />
-                    </div>
-                    <div className="step-text">
-                      <h6><a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank">Check Result:</a></h6>
-                      <p>
-                        You can input your basic details online and obtain the result.
-                      </p>
-                    </div>
+                    <a href="https://eservice.nicasiabank.com/see-result/pre-registration" target="_blank">
+                      <div className="step-icon">
+                        <img src="/img/notepad.png" alt="" />
+                      </div>
+                      <div className="step-text">
+                        <h6>Check Result:</h6>
+                        <p>
+                          You can input your basic details online and obtain the result.
+                        </p>
+                      </div>
+                    </a>
                   </li>
                 </ul>
                 <ul className="app-download-list">
