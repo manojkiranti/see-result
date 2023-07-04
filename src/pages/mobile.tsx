@@ -41,10 +41,16 @@ export default function Mobile() {
                 <h2>Check SEE Result 2079 with Marksheet via NIC Asia Bank</h2>
                 <p>Visit NIC Asia Bank official website to access your SEE Result 2079 with marksheet.</p>
               </div>
-              <div className="banner-text">
+              <div className="text-center banner-text">
                 {/* <h6 className="text-sub-title"><span className="text-primary"># </span>Coming Soon</h6> */}
-                <h1 className="font-bold fs">
-                  For the first time, Get SEE Result in<span className="text-primary"> MoBank App.</span>
+                <div className="banner-main-text">
+                  <h2>Coming Soon</h2>
+                </div>
+                <h1 className="font-bold fs ">
+                  For The First Time, Get<span className="text-primary"> SEE-2079</span>  Result In
+                      <span className="banner-icon">
+                      <img src="/img/mobank-icon-2.png" alt="line" />
+                    </span>
                 </h1>
                 {/* <p>NIC ASIA Bank offers facility to check SEE result of your student through MoBank.</p> */}
                 {/* <ul className="steps">
@@ -75,13 +81,11 @@ export default function Mobile() {
                     </a>
                   </li>
                 </ul> */}
-                 <div className="mt-8 mb-4 max-[767px]:mb-9 text-content">
-                  {/* <a href="https://eservice.nicasiabank.com/see-result/pre-registration" className="custom-btn" target="_blank">
-                    View Result
-                  </a> */}
+                 {/* <div className="mt-8 mb-4 max-[767px]:mb-9 text-content">
+           
                   <h2>Coming Soon</h2>
                   <h2>Coming Soon</h2>
-                </div>
+                </div> */}
                 
               </div>
             </div>

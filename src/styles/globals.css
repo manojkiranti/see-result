@@ -108,6 +108,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 2rem 0 0 ;
+  justify-content: center;
 }
 .app-download-list li:last-child{
   margin-left: 25px;
@@ -308,7 +309,14 @@ body {
 	color: #df2525;
 	animation: animateText 4s ease-in-out infinite;
 }
-
+.banner-icon{
+  display: block;
+  margin-top: 6px;
+}
+.banner-icon >img{
+  max-width: 180px;
+  margin: 0 auto;
+}
 @keyframes animateText {
 	0%,
 	100% {
@@ -351,6 +359,7 @@ body {
   .banner-text h1{
     font-size: 40px;
     line-height: 58px;
+    margin-bottom: 2rem;
   }
   .banner-section{
     text-align: center;
@@ -396,6 +405,21 @@ body {
   }
 }
 
+.banner-main-text{
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #e53135;
+  margin-bottom: 1rem;
+
+}
+.banner-main-text h2{
+  
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+
+}
 @media screen and (max-width: 390px) {
   .text-content h2{
     font-size: 3rem;
